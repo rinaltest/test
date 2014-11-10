@@ -1,0 +1,212 @@
+html , body
+{
+	height 				: 	100%;
+	width 				: 	100%;
+	position 			: 	relative;
+}
+
+*{
+	margin 				: 	0;
+	padding 			: 	0;
+	-webkit-box-sizing	: 	border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing		: 	border-box;    /* Firefox, other Gecko */
+	box-sizing 			:	border-box;         /* Opera/IE 8+ */
+
+}
+
+@font-face
+{
+	font-family			:	HelveticaNeueLTStd-Lt;
+	src 				:	url('../fonts/HelveticaNeueLTStd-Lt.otf');	
+}
+@font-face
+{
+	font-family			:	HelveticaNeueLTStd-Th;
+	src 				:	url('../fonts/HelveticaNeueLTStd-Th.otf');	
+}
+@font-face
+{
+	font-family			:	HelveticaNeueLTStd-Roman;
+	src 				:	url('../fonts/HelveticaNeueLTStd-Roman.otf');	
+}
+@font-face
+{
+	font-family			:	HelveticaNeueLTStd-Md;
+	src 				:	url('../fonts/HelveticaNeueLTStd-Md.otf');	
+}
+@font-face
+{
+	font-family			:	HelveticaNeueLTStd-Hv;
+	src 				:	url('../fonts/HelveticaNeueLTStd-Hv.otf');	
+}
+#puzzle-navigation 
+{ 
+	list-style 			: 	none; 
+	margin 				: 	0; 
+	padding 			: 	0;
+	font-size			: 	1.2em;
+	white-space			: 	nowrap;
+}
+
+#puzzle-navigation li
+{
+	font-family 		: 	"Century Gothic", Verdana, Arial, Sans-Serif;
+	font-size 			: 	55%;
+	float 				: 	left;
+	position 			: 	relative;
+	display 			: 	block;
+	padding 			: 	2px 6px 5px 6px;
+	text-decoration		: 	none;
+	color 				: 	#ddd;
+	cursor 				: 	pointer;
+}
+
+#puzzle-navigation li:hover
+{
+	color 				: 	#fff;
+}
+
+#puzzle-navigation li:hover ul 
+{
+	display				: 	block;
+}
+#puzzle-navigation ul
+{
+	float 				:	none;
+	display  			: 	none;
+	list-style 			: 	none;
+	margin 				: 	0;
+	padding 			: 	0;
+	top 				: 	1.9em;
+	left 				: 	0;
+	position			: 	absolute;
+}
+
+#puzzle-navigation ul li
+{
+	float 				: 	none;
+	clear 				: 	none;
+	margin 				: 	0;
+	padding				: 	0;
+	background 			: 	#999;
+}
+
+#puzzle-navigation li:hover ul li,
+#puzzle-navigation ul li
+{
+	font-size 			: 	100%;
+	line-height 		: 	100%;
+	display 			: 	block;
+	padding 			:  	2px 6px 2px 6px;
+	float 				: 	none;
+	text-transform 		: 	lowercase;
+	color 				: 	#666;
+	background 			: 	white;
+}
+
+#puzzle-navigation li:hover ul li:hover,
+#puzzle-navigation ul li:hover
+{
+	font-size 			: 	100%;
+	background 			: 	#999;
+	color 				: 	#fff;	
+}
+.page_wrapper
+{
+	width 				: 	100%;
+	height 				: 	100%;
+	position 			:	relative;
+	background 			: 	url("../img/background/background.jpg") no-repeat center;
+	background-size		: 	100% 100%;
+}
+.block_title
+{
+	padding 			: 	2% 0 0 5%;
+	width	 			:	70%; 
+	/*height				: 	10%;*/
+	position 			:	relative;
+}
+.block_title > div
+{
+	display				:	inline-block;
+}
+.title_icon
+{
+	width 				:	10%;
+}
+.title_icon > img
+{
+	width				: 	100%;
+}
+.title
+{
+	width				: 	85%;
+	/*height				:	100%;*/
+}
+.title1
+{
+	font-family			: 	HelveticaNeueLTStd-Lt;
+}
+.title2
+{
+	font-family			:	HelveticaNeueLTStd-Md;
+}
+.text_color_brown
+{
+	color 				: 	#443625;
+}
+.text_color_white
+{
+	color				:	#FFF;
+}
+.top_right_icon
+{
+	position 			:	absolute;
+	z-index				:	0;
+	top					:	0;
+	right				:	0;
+	width 				:	25%;
+}
+.top_right_icon > img
+{
+	width 				:	100%;
+}
+.block_pazzle
+{
+	width 				:	100%;
+	display 			:	block;
+	text-align	 		:	center;
+	margin-top 			:	3%;
+}
+.block_pazzle > .puzzle_block
+{
+	background 			:	rgba(0,0,0,0.4);
+	display 			:	inline-block;
+	padding 			:	0 3% 3% 3%;
+	margin 				:	3%;
+	border-radius 		:	5%;
+	text-align			:	left;
+	position 			:	relative;
+}
+
+.puzzle_title_block
+{
+	width 				:	100%;
+	margin-bottom		: 	-6%;
+}
+.puzzle_num
+{
+	line-height			: 	120%;
+	color				:	#635139;
+	font-family			:	HelveticaNeueLTStd-Hv;
+}
+.puzzle_title
+{
+	position 			:	absolute;
+	line-height 		:	100%;
+	margin-left 		:	8%;
+	top 				:	6%;
+	z-index 			:	1;
+	font-family			:	HelveticaNeueLTStd-Roman;
+	color				:	#FFF;
+}
